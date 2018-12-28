@@ -1,0 +1,48 @@
+.letter-modal {
+  background-color: white;
+  width: 30vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px; }
+  .letter-modal__header {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 1rem;
+    min-height: 43px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0; }
+    .letter-modal__header h3 {
+      font-size: 1rem;
+      color: white;
+      margin: 0; }
+  .letter-modal__buttons {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem; }
+    .letter-modal__buttons .default-mail-btn {
+      color: white; }
+  .letter-modal__body {
+    padding: 1rem;
+    flex-grow: 2;
+    display: flex; }
+  .letter-modal__footer {
+    padding: 1rem; }
+  .letter-modal + .letter-modal {
+    margin-left: 2vw; }
+
+.body__editor {
+  flex-grow: 2;
+  border: none; }

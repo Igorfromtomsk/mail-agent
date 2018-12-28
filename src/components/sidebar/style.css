@@ -1,0 +1,54 @@
+.sidebar {
+  padding: 1rem;
+  height: 100%;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px; }
+  .sidebar__write-btn {
+    display: block;
+    padding: .2rem 1.5rem;
+    min-height: 40px;
+    font-size: 1.3rem;
+    border: 2px solid #64dd17;
+    background: none;
+    margin-bottom: 2rem;
+    -webkit-transition: ease 0.25s;
+    -moz-transition: ease 0.25s;
+    -ms-transition: ease 0.25s;
+    -o-transition: ease 0.25s;
+    transition: ease 0.25s;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15); }
+    .sidebar__write-btn:before {
+      content: '+';
+      margin-right: .7rem; }
+    .sidebar__write-btn:hover {
+      border-color: #1faa00;
+      -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+      -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15); }
+  .sidebar__button {
+    display: block;
+    min-height: 40px;
+    width: 100%;
+    font-size: 1rem;
+    padding: .3rem 1rem;
+    margin-bottom: .3rem;
+    cursor: pointer;
+    text-align: left;
+    border: 0;
+    background: none;
+    -webkit-transition: ease 0.25s;
+    -moz-transition: ease 0.25s;
+    -ms-transition: ease 0.25s;
+    -o-transition: ease 0.25s;
+    transition: ease 0.25s;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px; }
+    .sidebar__button:hover {
+      background-color: rgba(0, 0, 0, 0.05); }

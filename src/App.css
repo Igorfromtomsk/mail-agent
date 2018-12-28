@@ -1,0 +1,67 @@
+.container-fluid {
+  flex-grow: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+
+.container-fluid .main-container {
+  flex-grow: 2; }
+
+.container-fluid .row {
+  display: flex;
+  flex-direction: row; }
+
+.container-fluid .row .col-md-2 {
+  flex: 16.66666667%; }
+
+.container-fluid .row .col-md-10 {
+  flex: 83.33333333%; }
+
+.default-mail-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  min-width: 1rem;
+  min-height: 1rem;
+  display: inline-block;
+  position: relative;
+  opacity: .5; }
+  .default-mail-btn:after, .default-mail-btn:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: all; }
+  .default-mail-btn:after {
+    width: 2rem;
+    height: 2rem; }
+  .default-mail-btn:before {
+    -webkit-transition: ease 0.25s;
+    -moz-transition: ease 0.25s;
+    -ms-transition: ease 0.25s;
+    -o-transition: ease 0.25s;
+    transition: ease 0.25s;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 0rem;
+    height: 0rem; }
+  .default-mail-btn:hover {
+    opacity: 1; }
+    .default-mail-btn:hover:before {
+      opacity: 1;
+      width: 2rem;
+      height: 2rem; }
+  .default-mail-btn + .default-mail-btn {
+    margin-left: 1rem; }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }

@@ -1,0 +1,33 @@
+.letter__td-letter-checkbox {
+  min-width: 45px;
+  padding-left: 1rem; }
+
+.letter__td-favorite {
+  min-width: 35px; }
+
+.letter__td-author {
+  min-width: 200px;
+  align-items: center; }
+
+.letter__td-letter {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: row; }
+
+.letter__td-date {
+  min-width: 100px; }
+
+.letter__author, .letter__title, .letter__text, .letter__time {
+  font-size: 1rem;
+  line-height: 1.4em;
+  margin: 0; }
+
+.letter__time {
+  padding-right: 1rem;
+  text-align: right; }
+
+.letter__text {
+  opacity: .75; }
+  .letter__text:before {
+    content: '-';
+    margin: 0px .5rem; }

@@ -1,0 +1,23 @@
+.add-to-favorite-btn {
+  position: relative; }
+  .add-to-favorite-btn svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transition: ease 0.25s;
+    -moz-transition: ease 0.25s;
+    -ms-transition: ease 0.25s;
+    -o-transition: ease 0.25s;
+    transition: ease 0.25s; }
+    .add-to-favorite-btn svg.awesome-icon-shadow {
+      opacity: 0;
+      color: #fbc02d; }
+  .add-to-favorite-btn--added {
+    opacity: 1; }
+    .add-to-favorite-btn--added:before {
+      opacity: .5; }
+    .add-to-favorite-btn--added svg {
+      opacity: 0; }
+      .add-to-favorite-btn--added svg.awesome-icon-shadow {
+        opacity: 1; }
