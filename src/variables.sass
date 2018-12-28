@@ -1,0 +1,25 @@
+@mixin transition($duration: .25s)
+  -webkit-transition: ease $duration
+  -moz-transition: ease $duration
+  -ms-transition: ease $duration
+  -o-transition: ease $duration
+  transition: ease $duration
+
+@mixin b-radius($radius: 4px)
+  -webkit-border-radius: $radius
+  -moz-border-radius: $radius
+  border-radius: $radius
+
+@mixin shadow($radius: 20px, $color: rgba(0,0,0,.15))
+  -webkit-box-shadow: 0px 0px $radius $color
+  -moz-box-shadow: 0px 0px $radius $color
+  box-shadow: 0px 0px $radius $color
+
+
+$c-green: #64dd17
+$c-green-l: #9cff57
+$c-green-d: #1faa00
+
+$c-yellow: #fbc02d
+$c-yellow-l: #fff263
+$c-yellow-d: #c49000

@@ -1,0 +1,64 @@
+@import '../../../variables.sass'
+
+.letter-checkbox
+  width: 1.2rem
+  height: 1.2rem
+  margin: 0
+  display: flex
+  align-items: center
+
+  &__checkbox-frame
+    cursor: pointer
+    width: 1rem
+    height: 1rem
+    border: 2px solid rgba(0,0,0,.4)
+    display: block
+    opacity: .75
+    position: relative
+    background-color: rgba(0,0,0,0)
+
+    @include b-radius(2px)
+    @include transition()
+
+    svg
+      position: absolute
+      left: 50%
+      top: 50%
+      color: white
+      opacity: 0
+      transform: translate(-50%, -50%)
+      font-size: .6rem
+
+      @include transition()
+
+
+    &:before
+      content: ''
+      width: 0rem
+      height: 0rem
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      background-color: rgba(0,0,0,.1)
+      opacity: 0
+      color: transparent
+      pointer-events: all
+
+      @include transition()
+      @include b-radius(50%)
+
+    &:hover
+      opacity: 1
+
+      &:before
+        opacity: 1
+        width: 2rem
+        height: 2rem
+
+  &--selected .letter-checkbox__checkbox-frame
+    background-color: rgba(0,0,0,.4)
+    border-color: rgba(0,0,0,0)
+
+    svg
+      opacity: 1

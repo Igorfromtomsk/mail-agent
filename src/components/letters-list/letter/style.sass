@@ -1,0 +1,39 @@
+.letter
+  &__td
+    &-letter-checkbox
+      min-width: 45px
+      padding-left: 1rem
+
+    &-favorite
+      min-width: 35px
+
+    &-author
+      min-width: 200px
+      align-items: center
+
+    &-letter
+      flex-grow: 2
+      display: flex
+      flex-direction: row
+
+    &-date
+      min-width: 100px
+
+  &__author,
+  &__title,
+  &__text,
+  &__time
+    font-size: 1rem
+    line-height: 1.4em
+    margin: 0
+
+  &__time
+    padding-right: 1rem
+    text-align: right
+
+  &__text
+    opacity: .75
+
+    &:before
+      content: '-'
+      margin: 0px .5rem

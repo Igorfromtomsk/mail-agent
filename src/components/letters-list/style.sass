@@ -1,0 +1,44 @@
+@import '../../variables.sass'
+
+.letter-list
+  height: 100%
+  padding: 1rem
+
+  @include b-radius
+
+  &__letter-table
+    width: 100%
+
+  &__header
+    display: flex
+    flex-direction: row
+    align-items: center
+    min-height: 40px
+    border: 1px solid rgba(0,0,0,.15)
+    border-left: 0
+    border-right: 0
+
+    &-td
+      min-width: 35px
+
+      &:first-child
+        min-width: 45px
+        padding-left: 1rem
+
+  &__letter
+    min-height: 40px
+    display: flex
+    align-items: center
+    border-bottom: 1px solid rgba(0,0,0,.15)
+    cursor: pointer
+
+    @include transition()
+
+    &:nth-child(odd)
+      background-color: rgba(0,0,0, .02)
+
+    &:hover
+      background-color: rgba(0,0,0,.05)
+
+
+

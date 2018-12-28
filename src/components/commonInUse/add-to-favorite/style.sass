@@ -1,0 +1,28 @@
+@import '../../../variables.sass'
+
+.add-to-favorite-btn
+  position: relative
+
+  svg
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+
+    @include transition()
+
+    &.awesome-icon-shadow
+      opacity: 0
+      color: $c-yellow
+
+  &--added
+    opacity: 1
+
+    &:before
+      opacity: .5
+
+    svg
+      opacity: 0
+
+      &.awesome-icon-shadow
+        opacity: 1
