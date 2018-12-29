@@ -5,7 +5,7 @@ export default function Sidebar({addNewLetterToModalsList}) {
   return (
     <div className="sidebar">
       <button
-        onClick={addNewLetterToModalsList}
+        onClick={e => addNewLetterToModalsList()}
         className="sidebar__write-btn"
       >Write</button>
       <div className="menu-list">

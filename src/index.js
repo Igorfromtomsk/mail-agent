@@ -10,7 +10,7 @@ import {Provider} from "react-redux";
 import {library} from '@fortawesome/fontawesome-svg-core';
 import * as icons from './awesomeIcons';
 
-import App from './App';
+import App from './containers/app';
 import reducers from "./reducers";
 
 library.add(icons);

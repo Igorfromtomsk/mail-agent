@@ -57,6 +57,25 @@ function favoriteLetterSuccess(letter) {
   }
 }
 
+function sendLetter(letter) {
+  return {
+    type: letterActions.LETTER_SEND,
+    payload: letter
+  }
+}
+function sendLetterError(error) {
+  return {
+    type: letterActions.LETTER_SEND_ERROR,
+    payload: error
+  }
+}
+function sendLetterSuccess(letter) {
+  return {
+    type: letterActions.LETTER_SEND_SUCCESS,
+    payload: letter
+  }
+}
+
 export {
   deleteLetter,
   deleteLetterError,
@@ -68,5 +87,9 @@ export {
 
   favoriteLetter,
   favoriteLetterError,
-  favoriteLetterSuccess
+  favoriteLetterSuccess,
+
+  sendLetter,
+  sendLetterError,
+  sendLetterSuccess
 }

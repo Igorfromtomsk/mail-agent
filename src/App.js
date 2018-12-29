@@ -20,20 +20,32 @@ class App extends Component {
     };
 
     this.addNewLetterToModalsList = this.addNewLetterToModalsList.bind(this);
+    this.sendLetterHandler = this.sendLetterHandler.bind(this);
     this.closeModal = this.closeModal.bind(this);
   }
 
   addNewLetterToModalsList(letter) {
-    if (this.state.modals.filter(f_letter => f_letter.id === letter.id).length === 0) {
+    const opened_modals_to_write = this.state.modals.filter(letter => letter.pseudo_id);
+    const pseudo_id =
+      opened_modals_to_write.length ?
+        opened_modals_to_write.sort((a, b) => a.pseudo_id - b.pseudo_id)[0].pseudo_id + 1 :
+        1;
+
+    console.log(this.state.modals);
+    if (!letter || this.state.modals.filter(f_letter => f_letter.id === letter.id).length === 0) {
       this.setState({
-        modals: [...this.state.modals, letter || {}]
+        modals: [...this.state.modals, letter || {pseudo_id, text: ''}]
       })
     }
   }
 
+  sendLetterHandler(letter) {
+    this.props.sendLetterHandler(letter);
+  }
+
   closeModal(letter) {
     this.setState({
-      modals: this.state.modals.filter(f_letter => f_letter.id !== letter.id)
+      modals: this.state.modals.filter(f_letter => f_letter !== letter)
     })
   }
 
@@ -67,6 +79,7 @@ class App extends Component {
         <LetterModalsList
           closeModal={this.closeModal}
           modals={this.state.modals}
+          sendLetterHandler={this.sendLetterHandler}
         />
       </>
     );

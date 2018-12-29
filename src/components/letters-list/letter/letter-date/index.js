@@ -7,6 +7,7 @@ export default function LetterDate({date}) {
   const now = new Date();
 
   let resultDate;
+
   switch (true) {
     case (now.getTime() - letterDate.getTime()) > 86400000:
       resultDate = toDate.format(letterDate);
@@ -21,7 +22,7 @@ export default function LetterDate({date}) {
       resultDate = Math.floor((now.getTime() - letterDate.getTime()) / 1000).toString() + ' seconds ego';
       break;
     default:
-      resultDate = date;
+      resultDate = toDate.format(date);
       break;
   }
 
